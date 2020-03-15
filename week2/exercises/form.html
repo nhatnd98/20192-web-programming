@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personal Details Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1>Personal Details Form</h1>
+        <div> 
+            <form action="form.php" method="POST">
+                <label for="fullname">Full name</label>
+                <input type="text" name="fullname">
+                
+                <label for="student-id">Student ID</label>
+                <input type="text" name="student-id">
+                
+                <label for="university">University</label>
+                <input type="text" name="university">
+                
+                <label for="class">Class</label>
+                <input type="text" name="class">
+                
+                <label for="address">Address</label>
+                <input type="text" name="address">
+                
+                <p>Gender</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+                <div>
+                    <p>What are your hobbies?</p>
+                    <input type="checkbox" id="hobby1" name="hobby[]" value="Listening to music">
+                    <label for="hobby1">Listening to music</label><br>
+                    <input type="checkbox" id="hobby2" name="hobby[]" value="Playing sports">
+                    <label for="hobby2">Playing sports</label><br>
+                    <input type="checkbox" id="hobby3" name="hobby[]" value="Singing">
+                    <label for="hobby3">Singing</label><br>
+                    <input type="checkbox" id="hobby4" name="hobby[]" value="Reading books">
+                    <label for="hobby4">Reading books</label><br>
+                    <input type="checkbox" id="hobby5" name="hobby[]" value="Travel">
+                    <label for="hobby5">Travel</label><br>
+                    <input type="checkbox" id="hobby6" name="hobby[]" value="Blogging">
+                    <label for="hobby6">Blogging</label><br>
+                    <input type="checkbox" id="others" name="hobby[]" value="Others">
+                    <label for="others">Others</label><br>
+                </div>
+                <input type="submit" name="submit" value="Click to submit">
+                <input type="reset" name="reset" value="Erase and Restart">
+            </form>
+        </div>
+    </body>
+</html>
