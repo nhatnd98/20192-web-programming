@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE student SYSTEM 'student.dtd'>
+
+<student>
+    <studentName>Nguyen Duc Nhat</studentName>
+    <studentID>20163040</studentID>
+    <studentClass>ICT.02-K61</studentClass>
+</student>
