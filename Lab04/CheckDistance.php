@@ -15,7 +15,11 @@ and open the template in the editor.
                             'Nashville' => 406, 'Las Vegas' => 1526,
                             'San Francisco' => 1835, 'Washington, DC'=> 595,
                             'Miami' => 1189, 'Pittsburgh' => 409);
-            $destinations = $_GET['destinations'];
+            if (array_key_exists('destinations', $_GET)) {
+                $destinations = $_GET['destinations'];
+            } else {
+                $destinations = "";
+            }
             if (is_array($destinations)) {
                 $count = 1;
                 $last_destination = $destinations[count($destinations) - 1];
@@ -42,7 +46,7 @@ and open the template in the editor.
                 }
                 echo "</table>";
             } else {
-                echo "Sorry, do not have destination information for $last_destination.";
+                echo "Sorry, do not have destination information.";
             }
         ?>     
     </body>
